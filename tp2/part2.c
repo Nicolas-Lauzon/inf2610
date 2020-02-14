@@ -38,10 +38,8 @@ void part2() {
         if(fork()==0){
             //2.1
             registerProc(2,1,getpid(),getppid());
-            exit(0);
         }
         wait(NULL);
-        exit(0);
     }
     wait(NULL);
 
@@ -54,15 +52,12 @@ void part2() {
         if(fork()==0){
             //2.2
             registerProc(2,2,getpid(),getppid());
-            exit(0);
         }
         if(fork()==0){
             //2.3
             registerProc(2,3,getpid(),getppid());
-            exit(0);
         }
         while(wait(NULL) > 0);   
-        exit(0);
     }
     wait(NULL);
 
@@ -75,10 +70,8 @@ void part2() {
         if(fork()==0){
             //2.4
             registerProc(2,4,getpid(),getppid());
-            exit(0);
         }
         wait(NULL);
-        exit(0);
     }
     wait(NULL);
 
@@ -91,10 +84,8 @@ void part2() {
         if(fork()==0){
             //2.5
             registerProc(2,5,getpid(),getppid());
-            exit(0);
         }
         wait(NULL);
-        exit(0);
     }
     wait(NULL);
     

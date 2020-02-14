@@ -23,6 +23,5 @@
 void question2() {
     printf("b992aa0d3d28 (printed using printf)");
     write(STDOUT_FILENO,"b992aa0d3d28 (printed using write)\n",strlen("b992aa0d3d28 (printed using write)\n"));
-    printf("\n");
 
 }
